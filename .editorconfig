@@ -1,0 +1,76 @@
+root = true
+
+[*]
+charset = utf-8
+end_of_line = crlf
+insert_final_newline = true
+indent_style = space
+indent_size = 4
+trim_trailing_whitespace = true
+
+[*.{csproj,props,targets,json,yml,yaml,md}]
+indent_size = 2
+
+[*.cs]
+# Naming: types and members
+dotnet_naming_rule.interfaces_should_be_i_prefixed.severity = warning
+dotnet_naming_rule.interfaces_should_be_i_prefixed.symbols = interface_symbols
+dotnet_naming_rule.interfaces_should_be_i_prefixed.style = i_prefix_style
+
+dotnet_naming_symbols.interface_symbols.applicable_kinds = interface
+dotnet_naming_style.i_prefix_style.required_prefix = I
+dotnet_naming_style.i_prefix_style.capitalization = pascal_case
+
+dotnet_naming_rule.types_pascal.severity = warning
+dotnet_naming_rule.types_pascal.symbols = type_symbols
+dotnet_naming_rule.types_pascal.style = pascal_style
+dotnet_naming_symbols.type_symbols.applicable_kinds = class,struct,enum,delegate
+dotnet_naming_style.pascal_style.capitalization = pascal_case
+
+dotnet_naming_rule.non_field_members_pascal.severity = warning
+dotnet_naming_rule.non_field_members_pascal.symbols = non_field_symbols
+dotnet_naming_rule.non_field_members_pascal.style = pascal_style
+dotnet_naming_symbols.non_field_symbols.applicable_kinds = property,event,method
+
+dotnet_naming_rule.private_fields_underscore.severity = warning
+dotnet_naming_rule.private_fields_underscore.symbols = private_fields
+dotnet_naming_rule.private_fields_underscore.style = underscore_camel
+dotnet_naming_symbols.private_fields.applicable_kinds = field
+dotnet_naming_symbols.private_fields.applicable_accessibilities = private
+dotnet_naming_style.underscore_camel.required_prefix = _
+dotnet_naming_style.underscore_camel.capitalization = camel_case
+
+# Code style
+csharp_new_line_before_open_brace = all
+csharp_prefer_braces = true:warning
+csharp_style_namespace_declarations = file_scoped:warning
+csharp_style_var_for_built_in_types = false:suggestion
+csharp_style_var_when_type_is_apparent = true:suggestion
+csharp_using_directive_placement = outside_namespace:warning
+
+# Analyzer severities aligned with zero-warning build
+dotnet_analyzer_diagnostic.category-Style.severity = suggestion
+dotnet_diagnostic.SA1101.severity = none
+dotnet_diagnostic.SA1309.severity = none
+dotnet_diagnostic.SA1633.severity = none
+dotnet_diagnostic.SA0001.severity = none
+dotnet_diagnostic.SA1402.severity = none
+dotnet_diagnostic.SA1623.severity = none
+dotnet_diagnostic.SA1642.severity = none
+dotnet_diagnostic.SA1611.severity = none
+dotnet_diagnostic.CS1591.severity = none
+
+# Keep readable block bodies / explicit ifs for teaching clarity
+dotnet_diagnostic.IDE0022.severity = none
+dotnet_diagnostic.IDE0024.severity = none
+dotnet_diagnostic.IDE0028.severity = none
+dotnet_diagnostic.IDE0032.severity = none
+dotnet_diagnostic.IDE0046.severity = none
+dotnet_diagnostic.IDE0078.severity = none
+dotnet_diagnostic.IDE0290.severity = none
+dotnet_diagnostic.IDE0305.severity = none
+csharp_style_expression_bodied_methods = false:silent
+csharp_style_expression_bodied_operators = false:silent
+
+[*.md]
+trim_trailing_whitespace = false

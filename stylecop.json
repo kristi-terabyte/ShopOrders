@@ -1,0 +1,23 @@
+{
+  "$schema": "https://raw.githubusercontent.com/DotNetAnalyzers/StyleCopAnalyzers/master/StyleCop.Analyzers/StyleCop.Analyzers.Settings.schema.json",
+  "settings": {
+    "documentationRules": {
+      "companyName": "ShopOrders Course Project",
+      "documentExposedElements": true,
+      "documentInternalElements": false,
+      "documentInterfaces": true,
+      "documentPrivateElements": false,
+      "xmlHeader": false
+    },
+    "orderingRules": {
+      "usingDirectivesPlacement": "outsideNamespace",
+      "systemUsingDirectivesFirst": true
+    },
+    "layoutRules": {
+      "newlineAtEndOfFile": "require"
+    },
+    "namingRules": {
+      "allowCommonHungarianPrefixes": false
+    }
+  }
+}
