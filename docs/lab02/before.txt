@@ -1,0 +1,2 @@
+ShopOrders lab02 baseline placeholder
+Subtotal calculation used mixed styles before standardization.

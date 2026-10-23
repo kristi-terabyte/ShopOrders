@@ -2,7 +2,7 @@ name: ci
 
 on:
   push:
-    branches: [main, master]
+    branches: [main, master, "feature/**", "lab07-tests", "lab6-refactoring", "lab02-code-style"]
   pull_request:
   workflow_dispatch:
 
@@ -26,3 +26,17 @@ jobs:
 
       - name: Test (Release)
         run: dotnet test ShopOrders.sln -c Release --no-build --verbosity normal
+
+      - name: Coverage (ShopOrders.Core)
+        run: |
+          dotnet test tests/ShopOrders.Tests/ShopOrders.Tests.csproj -c Release --no-build \
+            --collect:"XPlat Code Coverage" \
+            --settings coverlet.runsettings \
+            --results-directory TestResults
+
+      - name: Upload coverage
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: coverage
+          path: TestResults/**/coverage.cobertura.xml

@@ -1,0 +1,6 @@
+metric,value,note
+loc_totals_method,55,monolith estimate
+cc_totals_method,9,decision points estimate
+magic_numbers,4,vat discount threshold
+analyzer_warnings,NA,before TreatWarningsAsErrors
+tests,0,

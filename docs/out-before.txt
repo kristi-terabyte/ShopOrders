@@ -1,0 +1,4 @@
+# Симульований вивід «до» рефакторингу (монолітний розрахунок)
+Order total mixed with Console.WriteLine
+Subtotal=1200 Discount=60 VAT=228 Grand=1368
+(legacy mixed style; double risk; magic 0.2 / 0.05)

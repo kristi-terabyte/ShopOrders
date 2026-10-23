@@ -1,0 +1,8 @@
+metric,value,note
+loc_CalculateTotals,10,orchestration
+cc_CalculateTotals,1,
+loc_SumLineTotals,7,
+cc_SumLineTotals,2,
+magic_numbers,0,FinancialConstants
+analyzer_warnings,0,Release build
+tests,19+,xUnit

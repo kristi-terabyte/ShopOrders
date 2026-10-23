@@ -43,3 +43,11 @@ appsettings.*.local.json
 ## Publish
 publish/
 out/
+
+# local report tooling
+_shots/
+reports/docx/
+_*.py
+!_build_reports.py
+
+__pycache__/

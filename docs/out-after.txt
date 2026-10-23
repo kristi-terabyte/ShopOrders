@@ -1,0 +1,6 @@
+# Вивід сценарію після рефакторингу (decimal / Money)
+Subtotal: 1200.00 UAH
+Discount: 60.00 UAH
+Net: 1140.00 UAH
+VAT 20%: 228.00 UAH
+Grand total: 1368.00 UAH

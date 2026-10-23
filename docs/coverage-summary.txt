@@ -1,0 +1,7 @@
+ShopOrders.Core coverage (coverlet, Release)
+LINE=79.2%
+BRANCH=71.7%
+Threshold required (SR3 / LR7): line >= 70%
+Command:
+  dotnet test tests/ShopOrders.Tests -c Release --collect:"XPlat Code Coverage" --settings coverlet.runsettings
+Result: PASSED threshold.
