@@ -1,0 +1,10 @@
+GitHub Actions (зелений прогін):
+https://github.com/kristi-terabyte/ShopOrders/actions/runs/39968990120
+branch: feature/ci-pipeline  status: success
+
+Pull Request:
+https://github.com/kristi-terabyte/ShopOrders/pull/1
+state: open → merge after review
+
+Branches:
+  main, feature/ci-pipeline, lab07-tests, lab6-refactoring, lab02-code-style
